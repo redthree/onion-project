@@ -1,6 +1,7 @@
 :root {
   --black: #333333;
   --tint: #ff404c;
+  --separator: rgba(0, 0, 0, 10%);
 }
 
 html {
@@ -9,18 +10,28 @@ html {
 
 body {
   font-size: 1rem;
+}
+
+body * {
+  box-sizing: border-box;
   font-family: "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 header {
-  background-color: white;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 30%);
   padding: 3rem;
+}
+
+header .content {
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  border-bottom: 1px solid rgba(0, 0, 0, 30%);
+  max-width: 1000px;
+  margin: 0px auto;
 }
 
 header h1 {
@@ -72,5 +83,41 @@ header nav .link-button.active::after {
 }
 
 #hero img {
+  width: 100%;
+}
+
+/* Bags Gallery */
+#bags-gallery {
+  padding: 3rem;
+  width: 100%;
+}
+
+#bags-gallery .content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#bags-gallery #filters {
+  display: flex;
+  gap: 2rem;
+}
+
+#bags-gallery #filters .filter {
+  background-image: url("../assets/icon-chevronDown.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 0.5rem) center;
+  width: 150px;
+}
+
+#bags-gallery #filters .filter select {
+  appearance: none;
+  border: 1px solid var(--separator);
+  padding: 0.5rem 2rem 0.5rem 2.5rem;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: calc(0% + 0.5rem) center;
+  background-size: 20px;
+  background-image: url("../assets/icon-calendar.svg");
   width: 100%;
 }

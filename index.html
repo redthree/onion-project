@@ -27,17 +27,19 @@
     <!-- Header -->
     <header>
 
-      <h1>
-        <img src="assets/gab.svg" alt="Gab the bag">
-        <a href="#">Bag of Bags</a>
-      </h1>
+      <div class="content">
+        <h1>
+          <img src="assets/gab.svg" alt="Gab the bag">
+          <a href="#">Bag of Bags</a>
+        </h1>
 
-      <nav>
-        <a href="#" class="link-button active">Bags Gallery</a>
-        <a href="#" class="link-button">About our bags</a>
-        <a href="#" class="link-button">Eco friendly vision</a>
-        <a href="#" class="link-button">Ideas for your bags</a>
-      </nav>
+        <nav>
+          <a href="#" class="link-button active">Bags Gallery</a>
+          <a href="#" class="link-button">About our bags</a>
+          <a href="#" class="link-button">Eco friendly vision</a>
+          <a href="#" class="link-button">Ideas for your bags</a>
+        </nav>
+      </div>
 
     </header>
 
@@ -47,10 +49,25 @@
     </section>
 
     <!-- Gallery -->
-    <section>
-      <!-- Filters -->
+    <section id="bags-gallery">
+      <div class="content">
+        <!-- Filters -->
+        <div id="filters">
 
-      <!-- Bags thumbnails grid -->
+          <div class="filter">
+            <select name="year" id="year">
+              <option value="0">Year</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Bags thumbnails grid -->
+      </div>
     </section>
 
   </main>
